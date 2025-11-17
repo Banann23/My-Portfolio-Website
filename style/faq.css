@@ -1,0 +1,82 @@
+#faq {
+    margin: 5em 0 1em 0;
+}
+
+#faq-title-container {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+#faq-title {
+    font-family: "Pix32";
+    font-size: clamp(1.5rem, calc(4vw + 1rem), 4rem);
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+#faq-subtitle {
+    font-size: clamp(0.4rem, calc(1vw + 0.7rem), 1.5rem);
+    color: var(--secondary-color);
+}
+
+#faq-cards-container {
+    display: flex;
+    width: 100%;
+    gap: 2.5%;
+}
+
+#faq-cards-left {
+    width: 50%;
+    display: block;
+}
+
+#faq-cards-right {
+    width: 50%;
+    display: block;
+}
+
+.faq-card {
+    width: 100%;
+    height: auto;
+    border: 0.2em solid var(--primary-color);
+    border-radius: 15px;
+    padding: 1.5em;
+    display: block;
+    justify-content: left;
+    margin-bottom: 2em;
+}
+
+.faq-card label {
+    font-size: clamp(0.4rem, calc(1vw + 0.7rem), 1.8rem);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.faq-card div {
+    margin-top: 0.2em;
+    font-size: clamp(0.4rem, calc(1vw + 0.7rem), 1.5rem);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+    #faq {
+        margin: 2em 0 1em 0;
+    }
+
+    #faq-cards-container {
+        flex-direction: column;
+    }
+
+    #faq-cards-left,
+    #faq-cards-right {
+        width: 100%;
+    }
+
+    .faq-card {
+        margin-bottom: 1.5em;
+    }
+}

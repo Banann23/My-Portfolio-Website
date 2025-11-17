@@ -1,0 +1,141 @@
+#navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: max-content;
+    border: 0.2em solid var(--primary-color);
+    box-shadow: 0 0 1em var(--primary-color);
+    border-radius: 15px;
+    padding: 1em 1.5em;
+    margin-right: 1.5em;
+    margin-left: auto;
+    top: 1.5em;
+    z-index: 9999;
+    background-color: var(--secondary-background-color);
+    backdrop-filter: blur(8px);
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li a {
+    font-size: clamp(0.4rem, calc(1vw + 0.7rem), 1.4rem);
+    text-decoration: none;
+    margin: 0 0.3em;
+    transition: color 1s;
+}
+
+#navbar ul li a:hover {
+    color: var(--primary-color);
+    transition: 0.3s all;
+}
+
+/* SETTINGS BUTTONS */
+
+#settings-buttons {
+    position: fixed;
+    z-index: 9999;
+    top: 1.5em;
+}
+
+#theme-switch,
+#language-switch {
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: currentColor;
+    background-color: var(--secondary-background-color);
+    backdrop-filter: blur(8px);
+    height: 3.5em;
+    width: 3.5em;
+    margin-left: 1.5em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border: 0.2em solid var(--primary-color);
+    box-shadow: 0 0 0.5em var(--primary-color);
+    transition: 0.5s;
+}
+
+#language-switch {
+    margin-top: 1em;
+}
+
+#theme-switch svg,
+#language-switch svg {
+    fill: currentColor;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#theme-switch svg:last-child,
+#language-switch div:last-child {
+    display: none;
+}
+
+/* BUTTON SWITCH */
+
+.light-mode #theme-switch svg:first-child {
+    display: none;
+}
+
+.light-mode #theme-switch svg:last-child {
+    display: block;
+}
+
+.polish #language-switch div:first-child {
+    display: none;
+}
+
+.polish #language-switch div:last-child {
+    display: block;
+}
+
+#theme-switch:hover,
+#language-switch:hover {
+    opacity: 1;
+    border: 0.2em solid var(--secondary-color);
+    box-shadow: 0 0 1em var(--secondary-color);
+    transition: 0.5s;
+}
+
+#theme-switch:hover svg {
+    fill: var(--secondary-color);
+    transition: fill 0.5s;
+}
+
+#language-switch:hover div {
+    color: var(--secondary-color);
+    transition: fill 0.5s;
+}
+
+/* ACTIVE NAV STYLE */
+
+.active {
+    color: var(--secondary-color);
+    transition: color 1s;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+
+    #navbar {
+        display: none;
+    }
+
+    #theme-switch,
+    #language-switch {
+        height: 1.8em;
+        width: 1.8em;
+        margin-left: 0.5em;
+        padding: 0.2em;
+    }
+
+}

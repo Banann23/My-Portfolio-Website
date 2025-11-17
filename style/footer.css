@@ -1,0 +1,9 @@
+footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: var(--footer-background-color);
+    border-top: 0.2em solid var(--primary-color);
+    font-size: clamp(0.4rem, calc(1vw + 0.7rem), 1.4rem);
+    padding: 1em 0;
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Pix32";
+    src: url('../assets/fonts/Pix32.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url('../assets/fonts/Rubik-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}

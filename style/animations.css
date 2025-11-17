@@ -1,0 +1,53 @@
+/* FADE ANIMATIONS */
+
+.hidden-fast,
+.hidden-slow {
+    opacity: 0;
+}
+
+.slow-fade-show {
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.fast-fade-show {
+    opacity: 1;
+    transition: 1s;
+}
+
+/* SLIDE ANIMATIONS */
+
+.slide-slow,
+.slide-fast {
+    opacity: 0;
+    transform: translateX(-250px);
+}
+
+.fast-slide-show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.2s;
+}
+
+.slow-slide-show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.5s;
+}
+
+.blink {
+    color: var(--primary-color);
+    animation: blink-animation 1.2s step-start infinite;
+}
+
+@keyframes blink-animation {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

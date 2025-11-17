@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Front-end developer focused on building fast, modern websites. Explore projects, animations, design, and get in touch.">
+    <title> Hubert Banach - Portfolio </title>
+    <link rel="icon" href="images/hb.ico">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/animation.js" defer>  </script>
+    <script src="scripts/active-nav.js" defer> </script>
+    <script src="scripts/background.js" defer> </script>
+    <script src="scripts/lightmode.js" defer>  </script>
+</head>
+
+<body>
+
+    <!-- START -->
+
+    <span id="top"></span>
+
+    <!-- NAVBAR -->
+
+    <nav id="navbar" class="hidden-slow">
+        <ul>
+            <li><a href="#top">Start</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills"> Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="settings-buttons">
+        <div id="theme-switch" class="hidden-slow">
+            <svg class="icon">
+                <use href="images/sprite.svg#icon-night"></use>
+            </svg>
+            <svg class="icon">
+                <use href="images/sprite.svg#icon-day"></use>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTAINER -->
+
+    <div id="container">
+
+        <!-- HEADER -->
+
+        <section id="top">
+            <header id="welcome-page">
+
+                <!-- HEAD SECTION -->
+
+                <div id="welcome-page-text">
+                    <h5 class="slide-slow">Hi, I'm</h5>
+                    <h1 class="slide-fast"> > Hubert Banach<span class="blink">I </span>
+                    </h1>
+                    <h3 class="slide-slow">Front-end & Mobile Developer</h3>
+                    <h4 class="slide-slow">I build modern, responsive websites that are fast, accessible, and beautiful
+                        so
+                        your
+                        product looks great and works even better.</h4>
+                </div>
+
+                <!-- BUTTONS -->
+
+                <div id="welcome-page-buttons" class="hidden-slow">
+                    <a href="#about-me"> Get to know me </a>
+                    <a href="#projects"> My projects </a>
+                </div>
+            </header>
+        </section>
+
+        <!-- MAIN SECTION -->
+
+        <main>
+
+            <!-- ABOUT ME SECTION -->
+
+            <section id="about-me">
+
+                <!-- TITLE -->
+
+                <div id="am-title" class="slide-fast"> <span> /* A little bit about me */ </span> </div>
+
+                <!-- DESCRIPTION & PHOTO -->
+
+                <div id="am-text" class="hidden-slow">
+                    <div id="am-desc"> My name is <span class="text-bold"> Hubert
+                        </span>,
+                        I'm 20 years old and
+                        I'm a junior programmer with a passion for web development and creating beautiful,
+                        functional
+                        websites. At the moment I'm studying at <span class="text-bold"> Collegium da Vinci
+                        </span>
+                        in
+                        Poznań. I graduated from a technical high school, specializing in IT. I love learning new
+                        technologies and improving my skills. In my free time, I
+                        enjoy
+                        making
+                        mobile applications in Flutter. <br><br>
+                        When I'm not on the computer, I enjoy fishing and I'm also a big fan of old Japanese
+                        cars.
+                        <div id="am-end"> Looking for a developer you can rely on? Reach out. </div>
+                    </div>
+                </div>
+
+                <!-- ABOUT ME CARDS -->
+
+                <div id="am-cards-container">
+                    <div class="am-cards hidden-slow">
+                        <div class="am-card">
+                            <div class="am-card-title">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-school"></use>
+                                </svg>
+                                <h3> Education </h3>
+                            </div>
+                            <p> - Technical school, IT specialization </p>
+                            <p> - Collegium da Vinci Poznań, IT specialization </p>
+                        </div>
+                        <div class="am-card">
+                            <div class="am-card-title">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-language"></use>
+                                </svg>
+                                <h3> Languages </h3>
+                            </div>
+                            <p> - English (B2) </p>
+                            <p> - Polish (Native) </p>
+                        </div>
+                    </div>
+                    <div class="am-cards hidden-slow">
+                        <div class="am-card">
+                            <div class="am-card-title">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-interests"></use>
+                                </svg>
+                                <h3> Interests </h3>
+                            </div>
+                            <p> - Web development (HTML, CSS, JS, React) </p>
+                            <p> - Mobile apps in Flutter </p>
+                            <p> - Old Japanese cars, basketball and fishing </p>
+                        </div>
+                        <div class="am-card">
+                            <div class="am-card-title">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-favorite"></use>
+                                </svg>
+                                <h3> What drives me </h3>
+                            </div>
+                            <p>
+                                I find my greatest satisfaction in seeing my code work and
+                                deliver real results. I love creating beautiful, functional websites that provide
+                                exceptional user experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="retro-bar hidden-slow"></div>
+
+
+            <!-- SKILLS SECTION -->
+
+            <section id="skills">
+
+                <!-- TITLE  -->
+
+                <div id="skills-title-container">
+                    <div id="skills-title" class="slide-fast"> ~/portfolio > skills
+                    </div>
+                    <div id="skills-subtitle" class="slide-slow"> The tech stack that powers my projects — from
+                        front-end
+                        polish to solid
+                        back-end foundations. </div>
+                </div>
+
+                <!-- CONTENT -->
+
+                <div id="skills-content">
+                    <ul>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-html"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> HTML </span>
+                                <h3> Advanced </h3>
+                            </div>
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-css"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> CSS </span>
+                                <h3> Advanced </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-javascript"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> JavaScript </span>
+                                <h3> Advanced </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-javascript"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> TypeScript </span>
+                                <h3> Advanced </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-nodejs"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> Node.js </span>
+                                <h3> Learning </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-nodejs"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> SASS </span>
+                                <h3> Learning </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-react"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> React </span>
+                                <h3> Intermediate </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-flutter"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> Flutter </span>
+                                <h3> Advanced </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-github"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> Git & GitHub </span>
+                                <h3> Intermediate </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-cpp"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> C++ </span>
+                                <h3> Intermediate </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-php"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> PHP </span>
+                                <h3> Beginner </h3>
+                            </div>
+                        </li>
+                        <li class="hidden-fast">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-database"></use>
+                            </svg>
+                            <div class="skills-desc">
+                                <span> MySQL </span>
+                                <h3> Beginner </h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+
+            <section id="projects">
+
+                <!-- TITLE  -->
+
+                <div id="projects-title-container">
+                    <div id="projects-title" class="slide-fast"> ../PROJECTS/ </div>
+                    <div id="projects-subtitle" class="slide-slow"> Here are a few highlights from my recent work —
+                        projects
+                        that reflect my
+                        approach to building
+                        clean, user-focused digital experiences.</div>
+                </div>
+
+                <!-- CARDS -->
+
+                <div id="projects-cards" class="hidden-fast">
+                    <div class="project-card">
+                        <div class="project-type hidden-fast"> Front-end </div>
+                        <div class="project-card-title hidden-fast"> My portfolio website </div>
+                        <div class="project-card-techstack hidden-fast"> Tech Stack: HTML, CSS, JavaScript
+                        </div>
+                        <div class="project-card-description hidden-fast"> A personal portfolio built with pure HTML,
+                            CSS, and JavaScript. Featuring a light retro style, smooth animations, and full
+                            responsiveness, it looks great on any device. The project focuses on clarity, intuitive
+                            layout, and polished details that give it a unique and engaging vibe. </div>
+                        <a class="project-card-link hidden-fast">
+                            <span> You're currently here : &#41; </span>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-type hidden-fast"> Front-end </div>
+                        <div class="project-card-title hidden-fast"> Coming soon... </div>
+                        <div class="project-card-techstack hidden-fast"> Tech Stack: React, HTML, CSS, JavaScript
+                        </div>
+                        <div class="project-card-description hidden-fast"> Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit.
+                            Totam voluptate excepturi quae consequuntur accusamus accusantium non, ea suscipit sunt
+                            porro illo praesentium tenetur quasi blanditiis deserunt dicta neque obcaecati magni! </div>
+                        <a class="project-card-link hidden-fast" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-github"></use>
+                            </svg>
+                            <span> Coming soon... </span>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-type hidden-fast"> Mobile App </div>
+                        <div class="project-card-title hidden-fast"> myBodyFit </div>
+                        <div class="project-card-techstack hidden-fast"> Tech Stack: Flutter, Dart </div>
+                        <div class="project-card-description hidden-fast"> A handy health and fitness calculator
+                            app that helps users track their BMI, ideal weight, and other key body metrics. With a
+                            simple, user-friendly interface, it provides quick insights into your physical health and
+                            supports informed decisions for a balanced lifestyle. </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.hubertbanach.my_body_fit"
+                            class="project-card-link hidden-fast" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-google-play"></use>
+                            </svg>
+                            <span> View on Play Store </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="retro-bar hidden-slow"></div>
+
+            <!-- CONTACT SECTION -->
+
+            <section id="contact">
+
+                <!-- TITLE  -->
+
+                <div id="contact-title-container">
+                    <div id="contact-title" class="slide-fast"> Get in touch with me
+                        <span class="blink"> I </span>
+                    </div>
+                    <div id="contact-subtitle" class="slide-slow"> I'm currently open to new opportunities and
+                        collaborations. Whether you have
+                        a question,
+                        a project idea, or just want to say hello, feel free to reach out! You can contact me via email
+                        or
+                        connect with me on LinkedIn. I look forward to hearing from you!
+                    </div>
+                </div>
+
+                <!-- BUTTONS & ABOUT -->
+
+                <div id="contact-bottom-container">
+
+                    <!-- CONTACT BUTTONS -->
+
+                    <div id="contact-buttons-container">
+                        <div class="contact-buttons hidden-fast">
+                            <a class=" contact-button" href="https://www.linkedin.com/in/hubert-banach-716965388/"
+                                target="_blank" rel="noopener noreferrer">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                                <span> LinkedIn </span>
+                            </a>
+                            <a class="contact-button" href="https://github.com/Banann23" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-github"></use>
+                                </svg>
+                                <span> GitHub </span>
+                            </a>
+                            <a class="contact-button" href="https://discord.com/users/983005930918662204"
+                                target="_blank" rel="noopener noreferrer">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-discord"></use>
+                                </svg>
+                                <span> Discord </span>
+                            </a>
+                            <a class="contact-button" href="mailto: hubert.ba.dev@gmail.com" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-mail"></use>
+                                </svg>
+                                <span> E-mail </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT CONTACT -->
+
+                    <div id="about-contact-container">
+                        <div id="about-contact-cards">
+                            <div class="about-contact-card hidden-fast">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-location"></use>
+                                </svg>
+                                <span> Poland, Europe (remote work preferred) </span>
+                            </div>
+                            <div class="about-contact-card hidden-fast">
+                                <svg class="icon">
+                                    <use href="images/sprite.svg#icon-timer"></use>
+                                </svg>
+                                <span> I'm a student, so my availability on weekends may be limited </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- FREQ ASKED QUESTIONS SECTION -->
+
+            <section id="faq">
+
+                <!-- TITLE  -->
+
+                <div id="faq-title-container">
+                    <div id="faq-title" class="slide-fast"> [ FAQ ] </div>
+                    <div id="faq-subtitle" class="slide-slow"> Here are some common questions I receive,
+                        along
+                        with their answers.
+                        If you have any other questions, feel free to reach out!
+                    </div>
+                </div>
+
+                <div id="faq-cards-container">
+
+                    <!-- LEFT SIDE -->
+
+                    <div id="faq-cards-left" class="hidden-slow">
+                        <div class="faq-card">
+                            <label> What technologies do I prefer in Web Development? </label>
+                            <div>
+                                I mainly work with HTML, CSS, JavaScript and React, but I also know some basics
+                                in PHP, and MySQL for databases control.
+                            </div>
+                        </div>
+                        <div class="faq-card">
+                            <label> Are you open to remote work opportunities? </label>
+                            <div>
+                                Yes, I am open to remote work opportunities and have experience collaborating with
+                                remote
+                                teams.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+
+                    <div id="faq-cards-right" class="hidden-slow">
+                        <div class="faq-card">
+                            <label> How long does it usually take you to complete a project?
+                            </label>
+                            <div>
+                                The duration depends on the complexity and scope, but I always aim to deliver
+                                high-quality results efficiently.
+                            </div>
+                        </div>
+                        <div class="faq-card">
+                            <label> Do you take on small or hobby projects?
+                            </label>
+                            <div>
+                                Yes! I'm open to both professional and smaller creative projects, as long as the
+                                timeline is manageable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="hidden-slow">
+        <span style="font-family: Pix32; "> &copy; 2025 Hubert Banach. All rights reserved. </span>
+    </footer>
+
+</body>
+
+</html>

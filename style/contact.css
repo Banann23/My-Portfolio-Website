@@ -1,0 +1,167 @@
+#contact {
+    margin: 5em 0;
+}
+
+#contact-title-container {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+#contact-title {
+    font-family: "Pix32";
+    font-size: clamp(1.5rem, calc(4vw + 1rem), 4rem);
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.3rem;
+}
+
+#contact-subtitle {
+    font-size: clamp(0.4rem, calc(1vw + 0.7rem), 1.5rem);
+    color: var(--secondary-color);
+}
+
+#contact-bottom-container {
+    width: 100%;
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTACT BUTTONS */
+
+#contact-buttons-container {
+    width: 50%;
+    border-right: 0.2em solid var(--primary-color);
+}
+
+
+.contact-buttons {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em 5%;
+}
+
+.contact-button {
+    text-decoration: none;
+    width: 45%;
+    border: 0.2em solid var(--primary-color);
+    border-radius: 15px;
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+
+.contact-button svg {
+    height: clamp(0.5rem, calc(1vw + 1rem), 1.8rem);
+    width: clamp(0.5rem, calc(1vw + 1rem), 1.8rem);
+    vertical-align: middle;
+    transition: 0.5s;
+}
+
+.contact-button span {
+    font-size: clamp(0.5rem, calc(1vw + 0.7rem), 1.5rem);
+    vertical-align: middle;
+    margin-left: 0.5em;
+    transition: 0.5s;
+}
+
+/* ABOUT CONTACT CARDS */
+
+#about-contact-container {
+    width: 47.5%;
+}
+
+#about-contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.about-contact-card {
+    text-decoration: none;
+    width: 100%;
+    border: 0.2em solid var(--primary-color);
+    border-radius: 15px;
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-contact-card span {
+    font-size: clamp(0.5rem, calc(1vw + 0.7rem), 1.2rem);
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+.about-contact-card svg {
+    height: clamp(0.5rem, calc(1vw + 1rem), 1.8em);
+    width: clamp(0.5rem, calc(1vw + 1rem), 1.8rem);
+}
+
+/* CONTACT BUTTON HOVER STYLE */
+
+.contact-button:hover {
+    border: 0.2em solid var(--secondary-color);
+    box-shadow: 0 0 1.5em var(--secondary-color);
+    transition: 0.5s;
+}
+
+.contact-button:hover svg {
+    fill: var(--secondary-color);
+    transition: 0.5s;
+}
+
+.contact-button:hover span {
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+    #contact {
+        margin: 2em 0;
+    }
+
+    #contact-bottom-container {
+        margin-top: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    #contact-title-container {
+        text-align: center;
+    }
+
+    #contact-buttons-container {
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.2em solid var(--primary-color);
+        padding-bottom: 2em;
+    }
+
+    .contact-button {
+        width: 47.5%;
+    }
+
+    #about-contact-container {
+        width: 100%;
+    }
+
+    #about-contact-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-contact-card {
+        width: 100%;
+        margin-left: 0;
+    }
+}
