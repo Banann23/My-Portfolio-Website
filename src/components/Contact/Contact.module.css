@@ -1,0 +1,52 @@
+.contactsContainer {
+    width: 100%;
+    margin-top: 5em;
+    display: flex;
+}
+
+/* CONTACT BUTTONS */
+
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.contactButtonsContainer {
+    width: 50%;
+    border-right: 0.2em solid var(--border);
+}
+
+.contactButtons {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em 5%;
+}
+
+@media (max-width: 992px) {
+    .contactsContainer {
+        margin-top: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .contactTitleContainer {
+        text-align: left;
+    }
+
+    .contactButtonsContainer {
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.2em solid var(--border);
+        padding-bottom: 2em;
+    }
+
+    .contactInfoContainer {
+        width: 100%;
+    }
+}

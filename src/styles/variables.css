@@ -1,0 +1,52 @@
+:root {
+    /* DARK THEME (DEFAULT) */
+    --bg-dark: hsl(227 93% 2%);
+    --bg: hsl(218 70% 5%);
+    --bg-light: hsl(216 45% 10%);
+    --text: hsl(216 100% 98%);
+    --text-muted: hsl(216 44% 72%);
+    --highlight: hsl(216 26% 41%);
+    --border: hsl(216 34% 30%);
+    --border-muted: hsl(216 49% 20%);
+    --primary: hsl(216 78% 74%);
+    --secondary: hsl(37 56% 61%);
+    /* FONTS & SIZES */
+    --ff: "Rubik", sans-serif;
+    --ff2: "Rubik-Mono", monospace;
+    --ts-title: clamp(0.6rem, calc(4vw + 1rem), 3rem);
+    --ts-subtitle: clamp(0.4rem, calc(1vw + 0.7rem), 1.5rem);
+    --ts-text-l: clamp(0.4rem, calc(1vw + 0.7rem), 1.8rem);
+    --ts-text-m: clamp(0.4rem, calc(1vw + 0.7rem), 1.6rem);
+    --ts-text-s: clamp(0.3rem, calc(1vw + 0.7rem), 1.2rem);
+    /* MARGINS */
+    --margin-section-desktop: 15em 0;
+    --margin-section-mobile: 2em 0;
+    /* PADDINGS */
+    --card-padding: 1.5em 1.5em;
+    /* CARDS */
+    --card-bg: linear-gradient(360deg, var(--bg) 0%, var(--bg-light) 100%);
+    --card-border: 0.2em solid var(--border);
+    --card-border-radius: 15px;
+    /* SVG */
+    --svg-s: clamp(0.5rem, calc(1vw + 1rem), 1.8rem);
+    /* TRANSITION */
+    --transition-fast: 0.3s;
+    --transition-medium: 0.5s;
+    --transition-slow: 0.7s;
+}
+
+/* LIGHT THEME */
+
+.lightMode {
+    --bg-dark: hsl(216 73% 91%);
+    --bg: hsl(216 100% 97%);
+    --bg-light: hsl(216 100% 100%);
+    --text: hsl(224 100% 7%);
+    --text-muted: hsl(216 34% 30%);
+    --highlight: hsl(216 100% 100%);
+    --border: hsl(216 24% 53%);
+    --border-muted: hsl(216 34% 65%);
+    --primary: hsl(216 57% 31%);
+    --secondary: hsl(42 100% 15%);
+    --card-bg: linear-gradient(360deg, var(--bg) 0%, var(--bg-light) 100%);
+}

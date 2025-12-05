@@ -1,0 +1,22 @@
+.projectCards {
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 2%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+@media (max-width: 992px) {
+    .projectsTitleContainer {
+        text-align: left;
+    }
+
+    .projectCards {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+}

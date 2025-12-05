@@ -1,0 +1,36 @@
+.skillsTitleContainer {
+    width: 40%;
+    text-align: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2.5em;
+    align-self: flex-start;
+}
+
+.skillsContent {
+    width: 50%;
+    text-align: left;
+}
+
+.skillsContent ul {
+    list-style-type: none;
+}
+
+@media (max-width: 992px) {
+    .skillsTitleContainer {
+        width: 100%;
+        position: static;
+        text-align: left;
+        margin-bottom: 3em;
+    }
+
+    .skillsContent {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1610px) {
+    .skillsTitleContainer div:first-child {
+        font-size: clamp(1rem, calc(3vw + 1rem), 3rem);
+    }
+}

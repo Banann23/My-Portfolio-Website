@@ -1,0 +1,65 @@
+.settingButtons {
+    position: fixed;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.themeSwitch,
+.langSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    height: 3.5em;
+    width: 3.5em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s;
+}
+
+.langSwitch {
+    color: var(--bg);
+    font-weight: 800;
+}
+
+.themeSwitch svg {
+    fill: var(--bg);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: fill var(--transition-medium);
+}
+
+.themeSwitch:hover,
+.langSwitch:hover {
+    background-color: var(--secondary);
+    transition: var(--transition-medium);
+}
+
+@media (max-width: 992px) {
+    .settingButtons {
+        position: static;
+        margin-top: 0.8em;
+        margin-left: 0.5em;
+        gap: 0.5em;
+    }
+
+    .themeSwitch,
+    .langSwitch {
+        height: 3em;
+        width: 3em;
+        margin-left: 0em;
+    }
+}
+
+@media (max-width: 370px) {
+    .settingButtons {
+        flex-direction: row;
+        gap: 0.5em;
+    }
+}

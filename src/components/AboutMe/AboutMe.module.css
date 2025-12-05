@@ -1,0 +1,17 @@
+.amText {
+    padding: var(--card-padding);
+    font-size: var(--ts-text-m);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    background: var(--card-bg);
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.amEnd {
+    font-size: var(--ts-text-l);
+    margin-top: 1em;
+}

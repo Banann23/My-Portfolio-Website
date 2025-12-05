@@ -1,0 +1,32 @@
+.contactInfoCard {
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    background: var(--card-bg);
+    padding: var(--card-padding);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+.contactInfoCard span {
+    font-size: var(--ts-text-s);
+    margin-left: 0.2em;
+}
+
+.contactInfoCard svg {
+    fill: var(--text);
+}
+
+@media (max-width: 992px) {
+    contactInfoCard {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contactInfoCard {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

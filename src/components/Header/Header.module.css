@@ -1,0 +1,63 @@
+.welcomePageIntro {
+    font-family: "Rubik-Mono";
+    font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
+    color: var(--text-muted);
+}
+
+.welcomePageName {
+    font-family: "Rubik-Mono";
+    font-weight: 800;
+    font-size: clamp(3rem, calc(6vw + 1rem), 6rem);
+}
+
+.welcomePageSubtitle {
+    font-family: "Rubik-Mono";
+    font-size: clamp(1rem, calc(2.5vw + 1rem), 2.5rem);
+    margin-top: 0.2em;
+    color: var(--text-muted);
+}
+
+.welcomePageDesc {
+    font-size: clamp(0.4rem, calc(1vw + 0.7rem), 1.5rem);
+    letter-spacing: 0.2rem;
+    margin-top: 2em;
+    width: 70%;
+    line-height: 1.5;
+    color: var(--text-muted);
+
+}
+
+.welcomePageButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-top: 4.5em;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+    .welcomePage {
+        margin: 2.5em 0 2em 0;
+    }
+
+    .welcomePageDesc {
+        width: 100%;
+    }
+
+    .welcomePageName {
+        letter-spacing: 0.3rem;
+    }
+
+    .welcomePageButtons {
+        width: 100%;
+        justify-content: center;
+        gap: 1.5em;
+        margin-top: 3em;
+    }
+
+    .welcomePageButtons a {
+        margin-right: 0;
+    }
+}

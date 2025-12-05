@@ -1,0 +1,67 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 40%;
+    margin-top: 1.5em;
+    height: auto;
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    background: var(--card-bg);
+    padding: var(--card-padding);
+    text-align: left;
+}
+
+
+.projectCardType {
+    font-size: var(--ts-text-s);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    background-color: var(--bg-light);
+    color: var(--text-muted);
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 0.3em;
+    margin-right: auto;
+}
+
+.projectCardTitle {
+    font-size: var(--ts-text-l);
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+
+.projectCardTechstack {
+    font-size: var(--ts-text-s);
+    color: var(--text-muted);
+    margin-bottom: 1em;
+}
+
+.projectCardDesc {
+    font-size: var(--ts-text-s);
+    color: var(--text);
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.projectCardLink {
+    background-color: var(--primary);
+    border-radius: var(--card-border-radius);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.5em;
+    padding: 0.4em 1em;
+    margin-right: auto;
+}
+
+@media (max-width: 992px) {
+    .projectCard {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .projectCard:last-child {
+        margin-bottom: 0;
+    }
+}

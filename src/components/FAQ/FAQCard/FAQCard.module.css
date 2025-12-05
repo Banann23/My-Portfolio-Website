@@ -1,0 +1,28 @@
+.faqCard {
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    background: var(--card-bg);
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: left;
+    margin-bottom: 2em;
+}
+
+.faqCard label {
+    font-size: var(--ts-text-l);
+    font-weight: bold;
+}
+
+.faqCard div {
+    font-size: var(--ts-text-m);
+    color: var(--text-muted);
+    margin-top: 0.2em;
+}
+
+@media (max-width: 992px) {
+    .faqCard {
+        margin-bottom: 1.5em;
+    }
+}

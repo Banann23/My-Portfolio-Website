@@ -1,0 +1,46 @@
+.headerButton {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5em;
+    color: var(--bg);
+    background-color: var(--primary);
+    border-radius: var(--card-border-radius);
+    margin-right: min(2em, 5%);
+    border: none;
+    padding: 1em 1.2em;
+    transition: var(--transition-medium);
+}
+
+.headerButton:hover {
+    background-color: var(--secondary);
+}
+
+.headerButton svg {
+    height: var(--svg-s);
+    width: var(--svg-s);
+    fill: var(--bg);
+    transition: var(--transition-medium);
+    vertical-align: middle;
+}
+
+.headerButton span,
+.headerButton a {
+    font-size: var(--ts-text-m);
+    color: var(--bg);
+    transition: var(--transition-medium);
+    font-weight: 400;
+    margin-left: 0.2em;
+    vertical-align: middle;
+}
+
+.headerButton a {
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+
+    .headerButton svg {
+        display: none;
+    }
+}

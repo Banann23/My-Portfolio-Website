@@ -1,0 +1,11 @@
+.footerStyle {
+    background-color: var(--bg-light);
+    border-top: var(--card-border);
+    font-family: var(--ff2);
+    font-size: var(--ts-text-s);
+    padding: var(--card-padding);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 2em;
+}
