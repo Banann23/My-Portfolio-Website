@@ -38,7 +38,7 @@ A clean overview of the tech stack I work with, including:
 
 ## 📂 Projects
 
-A showcase of selected personal projects — including:
+A showcase of selected personal projects including:
 
 - This portfolio itself
 - My first JS project made a year ago
