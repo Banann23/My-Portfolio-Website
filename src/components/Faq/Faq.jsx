@@ -1,9 +1,9 @@
-import FAQCard from './FAQCard/FAQCard.jsx';
+import FaqCard from './FaqCard/FaqCard.jsx';
 import { motion } from 'framer-motion'
 import { fadeIn, slideIn } from '../../styles/animations.js'
 import { useTranslation } from 'react-i18next'
 
-function FaqSection() {
+function Faq() {
 
     const { t } = useTranslation();
 
@@ -14,13 +14,13 @@ function FaqSection() {
                 <motion.div {...fadeIn} className={"subtitle"}> {t("faqSubtitle")} </motion.div>
             </div>
             <div className="faqCardsContainer">
-                <FAQCard faqCardLabel={t("faqCardLabel1")} faqCardContent={t("faqCardContent1")} />
-                <FAQCard faqCardLabel={t("faqCardLabel2")} faqCardContent={t("faqCardContent2")} />
-                <FAQCard faqCardLabel={t("faqCardLabel3")} faqCardContent={t("faqCardContent3")} />
-                <FAQCard faqCardLabel={t("faqCardLabel4")} faqCardContent={t("faqCardContent4")} />
+                <FaqCard faqCardLabel={t("faqCardLabel1")} faqCardContent={t("faqCardContent1")} />
+                <FaqCard faqCardLabel={t("faqCardLabel2")} faqCardContent={t("faqCardContent2")} />
+                <FaqCard faqCardLabel={t("faqCardLabel3")} faqCardContent={t("faqCardContent3")} />
+                <FaqCard faqCardLabel={t("faqCardLabel4")} faqCardContent={t("faqCardContent4")} />
             </div>
         </>
     )
 }
 
-export default FaqSection;
+export default Faq;

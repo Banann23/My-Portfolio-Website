@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer.jsx'
 import { ThemeProvider } from './context/ThemeProvider.jsx'
 import LangPopup from './components/LangPopup/LangPopup.jsx'
 import CVPopup from './components/CVPopup/CVPopup.jsx'
-import FaqSection from './components/FAQSection/FAQSection.jsx'
+import Faq from './components/Faq/Faq.jsx'
 
 import './App.css'
 import './styles/globals.css'
@@ -46,7 +46,7 @@ function App() {
                 <Contact />
               </section>
               <section id="faq"> {/* FAQ Section */}
-                <FaqSection />
+                <Faq />
               </section>
             </main>
           </div>

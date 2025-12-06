@@ -1,4 +1,4 @@
-import styles from './FAQCard.module.css';
+import styles from './FaqCard.module.css';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../../styles/animations.js'
 import PropTypes from 'prop-types';
