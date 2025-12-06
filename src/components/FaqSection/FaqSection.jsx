@@ -1,10 +1,9 @@
-import styles from './FAQ.module.css';
 import FAQCard from './FAQCard/FAQCard.jsx';
 import { motion } from 'framer-motion'
 import { fadeIn, slideIn } from '../../styles/animations.js'
 import { useTranslation } from 'react-i18next'
 
-function FAQ() {
+function FaqSection() {
 
     const { t } = useTranslation();
 
@@ -24,4 +23,4 @@ function FAQ() {
     )
 }
 
-export default FAQ;
+export default FaqSection;

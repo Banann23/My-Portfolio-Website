@@ -6,11 +6,11 @@ import AboutMeCards from './components/AboutMe/AboutMeCards/AboutMeCards.jsx'
 import Skills from './components/Skills/Skills.jsx'
 import Projects from './components/Projects/Projects.jsx'
 import Contact from './components/Contact/Contact.jsx'
-import FAQ from './components/FAQ/FAQ.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { ThemeProvider } from './context/ThemeProvider.jsx'
 import LangPopup from './components/LangPopup/LangPopup.jsx'
 import CVPopup from './components/CVPopup/CVPopup.jsx'
+import FaqSection from './components/FAQSection/FAQSection.jsx'
 
 import './App.css'
 import './styles/globals.css'
@@ -46,7 +46,7 @@ function App() {
                 <Contact />
               </section>
               <section id="faq"> {/* FAQ Section */}
-                <FAQ />
+                <FaqSection />
               </section>
             </main>
           </div>
