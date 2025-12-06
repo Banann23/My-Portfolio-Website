@@ -8,12 +8,9 @@ function Footer() {
     const { t } = useTranslation();
 
     return (
-        <>
-            <motion.footer {...fadeIn} className={styles.footerStyle}>
-                <span> {t("footer")} </span>
-            </motion.footer>
-        </>
-
+        <motion.footer {...fadeIn} className={styles.footerStyle}>
+            <span> {t("footer")} </span>
+        </motion.footer>
     )
 }
 

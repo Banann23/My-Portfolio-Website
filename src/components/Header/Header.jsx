@@ -14,20 +14,18 @@ function Header() {
     }
 
     return (
-        <>
-            <header className={styles.welcomePage} >
-                <div className={styles.welcomePageText} >
-                    <motion.div {...fadeIn} className={styles.welcomePageIntro}> {t("heroGreeting")} </motion.div>
-                    <motion.div {...slideIn} className={styles.welcomePageName}> {t("heroTitle")} </motion.div>
-                    <motion.div {...fadeIn} className={styles.welcomePageSubtitle}> {t("heroSubtitle")} </motion.div>
-                    <motion.div {...fadeIn} className={styles.welcomePageDesc}> {t("heroDesc")} </motion.div>
-                </div>
-                <div className={styles.welcomePageButtons} >
-                    <FuncButton buttonOnClick={showCV} buttonIcon={"/sprite.svg#icon-preview"} buttonLabel={t("heroButton1")} />
-                    <LinkButton buttonLink="#projects" buttonIcon={"/sprite.svg#icon-folder"} buttonLabel={t("heroButton2")} />
-                </div>
-            </header>
-        </>
+        <header className={styles.welcomePage} >
+            <div className={styles.welcomePageText} >
+                <motion.div {...fadeIn} className={styles.welcomePageIntro}> {t("heroGreeting")} </motion.div>
+                <motion.div {...slideIn} className={styles.welcomePageName}> {t("heroTitle")} </motion.div>
+                <motion.div {...fadeIn} className={styles.welcomePageSubtitle}> {t("heroSubtitle")} </motion.div>
+                <motion.div {...fadeIn} className={styles.welcomePageDesc}> {t("heroDesc")} </motion.div>
+            </div>
+            <div className={styles.welcomePageButtons} >
+                <FuncButton buttonOnClick={showCV} buttonIcon={"/sprite.svg#icon-preview"} buttonLabel={t("heroButton1")} />
+                <LinkButton buttonLink="#projects" buttonIcon={"/sprite.svg#icon-folder"} buttonLabel={t("heroButton2")} />
+            </div>
+        </header>
     )
 }
 

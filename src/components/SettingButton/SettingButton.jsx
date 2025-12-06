@@ -17,23 +17,21 @@ function SettingButton() {
 
 
     return (
-        <>
-            <div className={styles.settingButtons}>
-                <motion.button whileHover={{ scale: 1.10 }} whileTap={{ scale: 0.95 }} className={styles.themeSwitch} onClick={() => setLightMode(prev => !prev)}>
-                    <svg>
-                        <use href={lightMode ? "/sprite.svg#icon-night" : "/sprite.svg#icon-day"}></use>
-                    </svg>
-                </motion.button>
-                <motion.button
-                    whileHover={{ scale: 1.10 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={styles.langSwitch}
-                    onClick={toggleLanguage}
-                >
-                    {currentLang === 'pl' ? 'EN' : 'PL'}
-                </motion.button>
-            </div>
-        </>
+        <div className={styles.settingButtons}>
+            <motion.button whileHover={{ scale: 1.10 }} whileTap={{ scale: 0.95 }} className={styles.themeSwitch} onClick={() => setLightMode(prev => !prev)}>
+                <svg>
+                    <use href={lightMode ? "/sprite.svg#icon-night" : "/sprite.svg#icon-day"}></use>
+                </svg>
+            </motion.button>
+            <motion.button
+                whileHover={{ scale: 1.10 }}
+                whileTap={{ scale: 0.95 }}
+                className={styles.langSwitch}
+                onClick={toggleLanguage}
+            >
+                {currentLang === 'pl' ? 'EN' : 'PL'}
+            </motion.button>
+        </div>
     )
 }
 

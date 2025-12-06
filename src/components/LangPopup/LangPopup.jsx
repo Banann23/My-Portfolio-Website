@@ -26,23 +26,21 @@ const LanguagePopup = () => {
     if (!show) return null;
 
     return (
-        <>
-            <div className={styles.popupOverlay}>
-                <motion.div
-                    className={styles.popupContainer}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
-                    transition={{ duration: 0.3 }}
-                >
-                    <p>Wybierz język / Choose your language:</p>
-                    <div className={styles.popupButtons}>
-                        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} onClick={() => chooseLanguage('pl')}>Polski</motion.button>
-                        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} onClick={() => chooseLanguage('en')}>English</motion.button>
-                    </div>
-                </motion.div>
-            </div>
-        </>
+        <div className={styles.popupOverlay}>
+            <motion.div
+                className={styles.popupContainer}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.3 }}
+            >
+                <p>Wybierz język / Choose your language:</p>
+                <div className={styles.popupButtons}>
+                    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} onClick={() => chooseLanguage('pl')}>Polski</motion.button>
+                    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} onClick={() => chooseLanguage('en')}>English</motion.button>
+                </div>
+            </motion.div>
+        </div>
     );
 };
 

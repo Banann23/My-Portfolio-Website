@@ -1,17 +1,17 @@
 .welcomePageIntro {
-    font-family: "Rubik-Mono";
+    font-family: "Rubik-Mono", monospace;
     font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
     color: var(--text-muted);
 }
 
 .welcomePageName {
-    font-family: "Rubik-Mono";
+    font-family: "Rubik-Mono", monospace;
     font-weight: 800;
     font-size: clamp(3rem, calc(6vw + 1rem), 6rem);
 }
 
 .welcomePageSubtitle {
-    font-family: "Rubik-Mono";
+    font-family: "Rubik-Mono", monospace;
     font-size: clamp(1rem, calc(2.5vw + 1rem), 2.5rem);
     margin-top: 0.2em;
     color: var(--text-muted);

@@ -17,6 +17,7 @@ LinkButton.propTypes = {
     buttonLink: PropTypes.string.isRequired,
     buttonLabel: PropTypes.string.isRequired,
     buttonIcon: PropTypes.string.isRequired,
+    download: PropTypes.bool,
 };
 
 export default LinkButton

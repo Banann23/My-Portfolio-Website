@@ -21,20 +21,18 @@ function CVPopup() {
     };
 
     return (
-        <>
-            <div className={styles.popupOverlay}>
-                <motion.span {...fadeIn} className={styles.popupClose} onClick={closeCV}>
-                    <svg className="icon"> <use href={"/sprite.svg#icon-close"}></use> </svg>
-                </motion.span>
-                <motion.div {...fadeIn} className={styles.popupContainer}>
-                    <motion.img {...fadeIn} src={currentLang === 'pl' ? '/CV_HubertBanach_pl.png' : '/CV_HubertBanach_en.png'} width="1414" height="2000" alt="Hubert Banach CV" />
-                    <motion.div {...fadeIn} className={styles.popupButtons}>
-                        <LinkButton buttonLink={currentLang === 'pl' ? '/CV_HubertBanach_pl.pdf' : '/CV_HubertBanach_en.pdf'} buttonIcon={"/sprite.svg#icon-download"} buttonLabel={t("popupButton1")} download />
-                        <FuncButton buttonOnClick={printCV} buttonIcon={"/sprite.svg#icon-print"} buttonLabel={t("popupButton2")} />
-                    </motion.div>
+        <div className={styles.popupOverlay}>
+            <motion.span {...fadeIn} className={styles.popupClose} onClick={closeCV}>
+                <svg className="icon"> <use href={"/sprite.svg#icon-close"}></use> </svg>
+            </motion.span>
+            <motion.div {...fadeIn} className={styles.popupContainer}>
+                <motion.img {...fadeIn} src={currentLang === 'pl' ? '/CV_HubertBanach_pl.png' : '/CV_HubertBanach_en.png'} width="1414" height="2000" alt="Hubert Banach CV" />
+                <motion.div {...fadeIn} className={styles.popupButtons}>
+                    <LinkButton buttonLink={currentLang === 'pl' ? '/CV_HubertBanach_pl.pdf' : '/CV_HubertBanach_en.pdf'} buttonIcon={"/sprite.svg#icon-download"} buttonLabel={t("popupButton1")} download />
+                    <FuncButton buttonOnClick={printCV} buttonIcon={"/sprite.svg#icon-print"} buttonLabel={t("popupButton2")} />
                 </motion.div>
-            </div>
-        </>
+            </motion.div>
+        </div>
     );
 };
 
