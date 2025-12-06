@@ -17,8 +17,6 @@ function SkillCard({ skillName, skillIcon, skillLevel }) {
     );
 }
 
-import PropTypes from 'prop-types';
-
 SkillCard.propTypes = {
     skillName: PropTypes.string.isRequired,
     skillIcon: PropTypes.string.isRequired,

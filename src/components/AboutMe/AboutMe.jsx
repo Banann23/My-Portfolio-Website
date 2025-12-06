@@ -10,14 +10,14 @@ function AboutMe() {
         <>
             <motion.div {...slideIn} className={"title"}> <span> {t("aboutMeTitle")} </span> </motion.div>
             <motion.div {...fadeIn} className={styles.amText}>
-                <div {...fadeIn}>
+                <motion.div {...fadeIn}>
                     {t("aboutMeTextP1")}
                     <span className={"textBold"}> Hubert </span>
                     {t("aboutMeTextP2")}
                     <span className={"textBold"}> Collegium da Vinci </span>
                     {t("aboutMeTextP3")}
                     <div className={styles.amEnd}> {t("aboutMeEnd")} </div>
-                </div>
+                </motion.div>
             </motion.div >
         </>
     )

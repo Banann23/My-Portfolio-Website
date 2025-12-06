@@ -1,4 +1,4 @@
-import SkillCard from './SkillCards/SkillCard';
+import SkillCard from './SkillCards/SkillCard.jsx';
 import styles from './Skills.module.css';
 import { motion } from 'framer-motion'
 import { fadeIn, slideIn } from '../../styles/animations.js'
