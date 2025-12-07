@@ -1,4 +1,4 @@
-# [💻 Hubert Banach – Portfolio Website](https://hbanach.com)
+# 💻 Hubert Banach – Portfolio Website
 ---
 
 This repo contains my personal portfolio — a clean, modern, fully responsive website built with React, HTML, CSS, and JavaScript.  
