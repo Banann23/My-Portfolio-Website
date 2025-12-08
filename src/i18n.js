@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
 
 i18n.use(initReactI18next).init({
-    debug: true,
+    debug: false,
     lng: 'en',
     resources: {
         en: {
@@ -47,6 +47,7 @@ i18n.use(initReactI18next).init({
                 skillsAdvanced: 'Advanced',
                 skillsIntermediate: 'Intermediate',
                 skillsBeginner: 'Beginner',
+                skillsLearning: 'Learning',
                 // Projects Section
                 projectsTitle: 'My Projects',
                 projectsSubtitle: "Here are a few highlights from my recent work — projects that reflect my approach to building clean, user-focused digital experiences.",
@@ -127,6 +128,7 @@ i18n.use(initReactI18next).init({
                 skillsAdvanced: 'Zaawansowany',
                 skillsIntermediate: 'Średnio - zaawansowany',
                 skillsBeginner: 'Podstawowy',
+                skillsLearning: 'Uczę się',
                 // Projects Section
                 projectsTitle: 'Moje Projekty',
                 projectsSubtitle: 'Kilka wyróżniających się projektów z ostatniego czasu — pokazujących, jak podchodzę do tworzenia przejrzystych, przyjaznych dla użytkownika doświadczeń.',

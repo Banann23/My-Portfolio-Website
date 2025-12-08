@@ -17,7 +17,7 @@ function Skills() {
                 <ul>
                     <SkillCard skillName="HTML" skillIcon="/sprite.svg#icon-html" skillLevel={t("skillsAdvanced")} />
                     <SkillCard skillName="CSS" skillIcon="/sprite.svg#icon-css" skillLevel={t("skillsAdvanced")} />
-                    <SkillCard skillName="Tailwind CSS" skillIcon="/sprite.svg#icon-tailwind" skillLevel={t("skillsIntermediate")} />
+                    <SkillCard skillName="Tailwind CSS" skillIcon="/sprite.svg#icon-tailwind" skillLevel={t("skillsLearning")} />
                     <SkillCard skillName="JavaScript" skillIcon="/sprite.svg#icon-javascript" skillLevel={t("skillsIntermediate")} />
                     <SkillCard skillName="React" skillIcon="/sprite.svg#icon-react" skillLevel={t("skillsIntermediate")} />
                     <SkillCard skillName="Flutter" skillIcon="/sprite.svg#icon-flutter" skillLevel={t("skillsAdvanced")} />
