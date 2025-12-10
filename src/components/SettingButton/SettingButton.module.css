@@ -63,3 +63,23 @@
         gap: 0.5em;
     }
 }
+
+@media (min-width: 2560px) {
+
+    .themeSwitch,
+    .langSwitch {
+        height: 5.25em;
+        widtH: 5.25em;
+    }
+}
+
+@media (min-width: 3840px) {
+
+    .themeSwitch,
+    .langSwitch {
+        height: 8em;
+        width: 8em;
+        padding: 1em;
+    }
+
+}

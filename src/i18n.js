@@ -64,6 +64,9 @@ i18n.use(initReactI18next).init({
                 projectTitle4: 'myBodyFit',
                 projectDesc4: 'A health and fitness tracking app that helps users monitor BMI, ideal weight, and other key body metrics. Its simple and user-friendly interface provides quick insights into physical health and supports informed decisions for a balanced lifestyle. The app is available in several popular languages and offers multiple color themes to choose from. Currently, it is available only on Android devices. It was built using Flutter with the Dart programming language.',
 
+                projectTitle5: 'JCARZZ - Car Shop',
+                projectDesc5: 'A website for a fictional shop specializing in classic Japanese cars from the 80s and 90s, built with React, CSS, and JavaScript. The page features a modern, visually appealing design with intuitive navigation and a fully responsive layout that adapts to various screen sizes. The project focuses only on the visual layer and layout presentation, without implementing any real shop functionality.',
+
                 projectLinkSpan1: ' View on GitHub',
                 projectLinkSpan2: ' Coming soon...',
                 projectLinkSpan3: ' View on Play Store ',
@@ -144,6 +147,9 @@ i18n.use(initReactI18next).init({
 
                 projectTitle4: 'myBodyFit',
                 projectDesc4: 'Aplikacja do śledzenia zdrowia i kondycji, pomagająca użytkownikom kontrolować BMI, idealną wagę i inne kluczowe wskaźniki ciała. Prosty i przyjazny interfejs zapewnia szybki wgląd w zdrowie fizyczne i wspiera świadome decyzje dla zrównoważonego stylu życia. Dostępna jest w kilku najpopularniejszych językach oraz ma wiele motywów kolorystycznych do wyboru. Aplikacja jest dostępna (jak narazie) tylko na urządzenia z Androidem. Została napisana we Flutterze z pomocą języka Dart.',
+
+                projectTitle5: 'JCARZZ - sklep samochodowy',
+                projectDesc5: 'Strona internetowa dla fikcyjnego sklepu z klasycznymi japońskimi samochodami z lat 80 i 90, stworzona przy użyciu React, CSS i JavaScript. Strona posiada nowoczesny, atrakcyjny design z intuicyjną nawigacją i responsywnym układem, który dostosowuje się do różnych rozmiarów ekranów. Projekt koncentruje się wyłącznie na warstwie wizualnej i prezentacji layoutu, bez implementacji faktycznej funkcjonalności sklepu.',
 
                 projectLinkSpan1: ' Zobacz na GitHub',
                 projectLinkSpan2: ' Wkrótce...',

@@ -35,6 +35,53 @@
     --transition-slow: 0.7s;
 }
 
+@media (min-width: 2560px) {
+    :root {
+        /* FONTS & SIZES */
+        --ff: "Rubik", sans-serif;
+        --ff2: "Rubik-Mono", monospace;
+        --ts-title: clamp(0.6rem, calc(4vw + 1rem), 4.5rem);
+        --ts-subtitle: clamp(0.4rem, calc(1vw + 0.7rem), 3.75rem);
+        --ts-text-l: clamp(0.4rem, calc(1vw + 0.7rem), 2.7rem);
+        --ts-text-m: clamp(0.4rem, calc(1vw + 0.7rem), 2.4rem);
+        --ts-text-s: clamp(0.3rem, calc(1vw + 0.7rem), 1.8rem);
+        /* MARGINS */
+        --margin-section-desktop: 20em 0;
+        /* PADDINGS */
+        --card-padding: 2em 2em;
+        /* CARDS */
+        --card-bg: linear-gradient(360deg, var(--bg) 0%, var(--bg-light) 100%);
+        --card-border: 0.2em solid var(--border);
+        --card-border-radius: 15px;
+        /* SVG */
+        --svg-s: clamp(0.5rem, calc(1vw + 1rem), 2.7rem);
+    }
+}
+
+
+@media (min-width: 3840px) {
+    :root {
+        /* FONTS & SIZES */
+        --ts-title: clamp(1rem, calc(3vw + 1rem), 9rem);
+        --ts-subtitle: clamp(0.8rem, calc(1vw + 1rem), 4.5rem);
+        --ts-text-l: clamp(0.8rem, calc(1vw + 1rem), 5.4rem);
+        --ts-text-m: clamp(0.7rem, calc(1vw + 1rem), 4.8rem);
+        --ts-text-s: clamp(0.6rem, calc(1vw + 1rem), 3.6rem);
+
+        /* MARGINS */
+        --margin-section-desktop: 20em 0;
+
+        /* PADDINGS */
+        --card-padding: 2em 2em;
+
+        /* ICONS */
+        --svg-s: clamp(1rem, calc(1vw + 1rem), 5.4rem);
+
+        /* CARDS */
+        --card-border-radius: 20px;
+    }
+}
+
 /* LIGHT THEME */
 
 .lightMode {
