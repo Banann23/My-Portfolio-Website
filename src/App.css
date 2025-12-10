@@ -6,6 +6,24 @@
     background-color: transparent;
 }
 
+@media (min-width: 3440px) {
+    #container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 3840px) {
+    #container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 5120px) {
+    #container {
+        width: 50%;
+    }
+}
+
 #top {
     height: auto;
     padding: 12em 0 5em 0;
