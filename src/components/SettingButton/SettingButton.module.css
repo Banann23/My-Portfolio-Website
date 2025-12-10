@@ -63,3 +63,9 @@
         gap: 0.5em;
     }
 }
+
+@media (min-width: 3440px) {
+    .settingButtons {
+        left: 5em;
+    }
+}
